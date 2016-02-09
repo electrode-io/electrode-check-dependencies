@@ -1,0 +1,25 @@
+{
+  "name": "electrode-component-dependencies",
+  "version": "1.0.0",
+  "description": "Maintain uniform dependencies for components",
+  "main": "check-dependencies.js",
+  "scripts": {
+    "test": "builder run check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gecgithub01.walmart.com/electrode/electrode-check-dependencies.git"
+  },
+  "keywords": [],
+  "author": "Joel Chen <xchen@walmartlabs.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "lodash": "^4.2.1",
+    "semver": "^5.1.0"
+  },
+  "devDependencies": {
+    "@walmart/electrode-archetype-hapi-plugin-dev": "^2.0.3",
+    "builder": "^2.6.0"
+  }
+}

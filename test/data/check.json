@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "a": "^1.0.0",
+    "b": "^1.0.1",
+    "tilde-1-ok": "~1.5.0",
+    "tilde-1-bad": "~0.1.0",
+    "not-finite": "^1.0.0",
+    "caret-0-maj-ok": "^0.5.0",
+    "caret-0-maj-bad": "^1.0.0"
+  }
+}
