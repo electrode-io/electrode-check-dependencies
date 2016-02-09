@@ -50,7 +50,10 @@ function checkPkgFile(pkgFile, checkFile, options) {
 
   options = options || {};
 
-  const load = (file, field) => Promise.resolve(Path.resolve(file))
+  const resolve = (file) =>
+    file.startsWith(".") ? Path.resolve(file) : file;
+
+  const load = (file, field) => Promise.try(() => resolve(file))
     .then(require).then((pkg) => pkg[field || "dependencies"]);
 
   return Promise.join(load(pkgFile, options.depField), load(checkFile, options.checkField),

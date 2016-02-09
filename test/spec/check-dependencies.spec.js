@@ -2,11 +2,12 @@
 
 const check = require("../..");
 const _ = require("lodash");
+const Path = require("path");
 
 describe("check-dependencies", function () {
 
   it("should return failed for deviated component dependencies", (done) => {
-    check.checkPkgFile("test/data/component.json", "test/data/check.json")
+    check.checkPkgFile("./test/data/component.json", "./test/data/check.json")
       .then(() => {
         throw new Error("expected error");
       })
@@ -26,7 +27,7 @@ describe("check-dependencies", function () {
 
 
   it("should return failed for unexpected component dependencies", (done) => {
-    check.checkPkgFile("test/data/unexpected.json", "test/data/check.json")
+    check.checkPkgFile("./test/data/unexpected.json", "./test/data/check.json")
       .then(() => {
         throw new Error("expected error");
       })
@@ -43,14 +44,14 @@ describe("check-dependencies", function () {
 
 
   it("should skip extra dependencies check when allowExtra flag is true", (done) => {
-    check.checkPkgFile("test/data/unexpected.json", "test/data/check.json", {allowExtra: true})
+    check.checkPkgFile("./test/data/unexpected.json", "./test/data/check.json", {allowExtra: true})
       .then(() => done())
       .catch(done);
   });
 
 
   it("should return no error for good component dependencies", (done) => {
-    check.checkPkgFile("test/data/satisfy.json", "test/data/check.json")
+    check.checkPkgFile(Path.resolve("test/data/satisfy.json"), "./test/data/check.json")
       .then(() => done())
       .catch(done);
   });
