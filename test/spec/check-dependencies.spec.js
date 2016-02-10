@@ -35,7 +35,8 @@ describe("check-dependencies", function () {
         if (!error.result) {
           throw error;
         } else {
-          expect(error.result.unexpected).to.deep.equal(["extra"]);
+          const x = error.result.unexpected.map((e) => e.name).sort();
+          expect(x).to.deep.equal(["extra"]);
         }
       })
       .then(() => done())

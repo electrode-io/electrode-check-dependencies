@@ -6,6 +6,9 @@
   "scripts": {
     "test": "builder run check"
   },
+  "bin": {
+    "ecd": "./bin/ecd.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://gecgithub01.walmart.com/electrode/electrode-check-dependencies.git"
@@ -16,6 +19,7 @@
   "dependencies": {
     "bluebird": "^2.10.2",
     "lodash": "^4.2.1",
+    "optimist": "^0.6.1",
     "semver": "^5.1.0"
   },
   "devDependencies": {

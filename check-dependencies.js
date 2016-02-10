@@ -40,7 +40,10 @@ function checkDependencies(component, check, options) {
 
   }).filter(_.identity);
 
-  const unexpected = !(options && options.allowExtra) && wantNames.filter((n) => (!isWml(n) && !check[n])) || [];
+  const getUnexpected = () =>
+    (!(options && options.allowExtra) && wantNames.filter((n) => (!isWml(n) && !check[n])) || []);
+
+  const unexpected = getUnexpected().map((name) => ({name, version: component[name]}));
 
   return {unsatisfyCommon, unexpected};
 }
