@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@walmart/test": "~0.0.1",
+    "a": "^1.9.0",
+    "b": "^1.5.1",
+    "not-finite": "^1.0.0 || ^2.0.0",
+    "caret-0-maj-ok": "^0.5.0",
+    "caret-0-maj-bad": "^0.6.0",
+    "tilde-1-ok": "~1.5.6",
+    "tilde-1-bad": "~0.0.6"
+  }
+}
