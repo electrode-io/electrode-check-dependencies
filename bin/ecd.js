@@ -26,6 +26,11 @@ const args = Optimist.options("filename", {
     default: false,
     alias: "h"
   })
+  .options("warn", {
+    default: false,
+    alias: "w"
+  })
+  .describe("warn", "show warning but exit with status OK")
   .describe("help", "help")
   .alias("help", "?");
 
@@ -86,5 +91,5 @@ CheckDep
         })
       }
     }
-    process.exit(1);
+    process.exit(options.warn ? 0 : 1);
   });
