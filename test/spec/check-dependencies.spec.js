@@ -15,7 +15,7 @@ describe("check-dependencies", function () {
         if (error.result) {
           expect(error.result.unsatisfyCommon).to.not.include("@walmart/test");
           const x = _.map(error.result.unsatisfyCommon, (r) => r.name).sort();
-          expect(x).to.deep.equal(["caret-0-maj-bad", "not-finite", "tilde-1-bad"]);
+          expect(x).to.deep.equal(["any", "caret-0-maj-bad", "not-finite", "tilde-1-bad"]);
           expect(error.result.unexpected).to.be.empty;
         } else {
           throw error;

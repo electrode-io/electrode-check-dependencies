@@ -22,7 +22,7 @@ function checkDependencies(component, check, options) {
 
     // version must have a finite range.  ie: can't have * or latest
     // do not allow multiple ranges. ie: can't have ^1.0.0 || ^2.0.0
-    if (!wantRange || wantRange.set.length !== 1) {
+    if (!wantRange || !wantRange.range || wantRange.set.length !== 1) {
       return {name, want, expected};
     }
 
