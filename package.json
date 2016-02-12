@@ -1,6 +1,6 @@
 {
   "name": "@walmart/electrode-check-dependencies",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Maintain uniform dependencies for components",
   "main": "check-dependencies.js",
   "scripts": {
