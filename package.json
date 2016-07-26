@@ -1,5 +1,5 @@
 {
-  "name": "@walmart/electrode-check-dependencies",
+  "name": "electrode-check-dependencies",
   "version": "1.0.2",
   "description": "Maintain uniform dependencies for components",
   "main": "check-dependencies.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gecgithub01.walmart.com/electrode/electrode-check-dependencies.git"
+    "url": "https://github.com/electrodejs/electrode-check-dependencies.git"
   },
   "keywords": [],
   "author": "Joel Chen <xchen@walmartlabs.com>",
@@ -23,7 +23,7 @@
     "semver": "^5.1.0"
   },
   "devDependencies": {
-    "@walmart/electrode-archetype-hapi-plugin-dev": "^2.0.3",
+    "electrode-archetype-njs-module-dev": "/Users/ananava/walmart-oss/electrode-archetype-njs-module-dev",
     "builder": "^2.6.0"
   }
 }
