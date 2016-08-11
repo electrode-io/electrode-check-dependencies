@@ -5,14 +5,14 @@ This module provides function to check a `package.json`'s dependencies against a
 ## Install
 
 ```
-npm install @walmart/electrode-check-dependencies
+npm install electrode-check-dependencies
 ```
 
 ## Usage
 
 ```js
 
-const CheckDep = require("@walmart/electrode-check-dependencies");
+const CheckDep = require("electrode-check-dependencies");
 
 CheckDep.checkPkgFile( "<component_package.json>", "<uniform_dep.json>" ).catch( (err) => {
   console.log("component deviates from uniform dependencies");
@@ -23,7 +23,7 @@ or
 
 ```js
 
-const CheckDep = require("@walmart/electrode-check-dependencies");
+const CheckDep = require("electrode-check-dependencies");
 const component = require("./package.json").dependencies;
 const check = require("./check.json").dependencies;
 
@@ -33,4 +33,3 @@ if ( result.unsatisfyCommon.length > 0 || result.unexpected.length > 0 ) {
   console.log("component deviates from uniform dependencies");
 }
 ```
-
