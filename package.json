@@ -1,6 +1,6 @@
 {
   "name": "electrode-check-dependencies",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Maintain uniform dependencies for components",
   "main": "check-dependencies.js",
   "scripts": {
