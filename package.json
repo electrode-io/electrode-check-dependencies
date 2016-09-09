@@ -15,9 +15,9 @@
   },
   "keywords": [],
   "author": "Joel Chen <xchen@walmartlabs.com>",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "dependencies": {
-    "bluebird": "^2.10.2",
+    "bluebird": "^3.4.6",
     "lodash": "^4.2.1",
     "optimist": "^0.6.1",
     "semver": "^5.1.0"
