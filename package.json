@@ -4,7 +4,7 @@
   "description": "Maintain uniform dependencies for components",
   "main": "check-dependencies.js",
   "scripts": {
-    "test": "builder run check"
+    "test": "gulp check"
   },
   "bin": {
     "ecd": "./bin/ecd.js"
@@ -23,7 +23,6 @@
     "semver": "^5.1.0"
   },
   "devDependencies": {
-    "electrode-archetype-njs-module-dev": "^1.0.1",
-    "builder": "^2.6.0"
+    "electrode-archetype-njs-module-dev": "^1.0.0"
   }
 }
