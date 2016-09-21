@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/electrode-io/electrode-check-dependencies.svg?branch=master)](https://travis-ci.org/electrode-io/electrode-check-dependencies)
+
 # Electrode Check Dependencies
 
 This module provides function to check a `package.json`'s dependencies against another list to make sure the package doesn't deviates from a uniform dependencies.  This is mainly for ensuring React components use the same version of a common module when being consumed by an app.
