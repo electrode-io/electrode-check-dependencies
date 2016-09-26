@@ -36,6 +36,8 @@ if ( result.unsatisfyCommon.length > 0 || result.unexpected.length > 0 ) {
 }
 ```
 
+Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/people) @WalmartLabs.
+
 [npm-image]: https://badge.fury.io/js/electrode-check-dependencies.svg
 [npm-url]: https://npmjs.org/package/electrode-check-dependencies
 [travis-image]: https://travis-ci.org/electrode-io/electrode-check-dependencies.svg?branch=master
